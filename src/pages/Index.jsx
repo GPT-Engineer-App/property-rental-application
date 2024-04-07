@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Box, Button, FormControl, FormLabel, Input, VStack, Heading, Divider, Textarea, Grid, GridItem } from "@chakra-ui/react";
-import Navigation from "../components/Navigation.jsx";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -30,9 +29,7 @@ const Index = () => {
   };
 
   return (
-    <Grid templateColumns="200px 1fr" gap={8}>
-      <Navigation />
-      <Box maxWidth="800px" margin="auto" padding={8}>
+    <Box maxWidth="800px" margin="auto" padding={8}>
         <Heading as="h1" size="xl" textAlign="center" marginBottom={8}>
           Property Rental Application
         </Heading>
@@ -128,8 +125,7 @@ const Index = () => {
           </VStack>
         </form>
       </Box>
-    </Grid>
-  );
+    );
 };
 
 export default Index;
